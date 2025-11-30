@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{width:100px;
+            height:100px;}
+        .big{width:500px;
+            height:500px;}
+        #aaa{background-color: #987654;}
+        #bbb{background-color: #123456;}
+        
+        .red{background-color:red;}
+        .green{background-color:green;}
+        .blue{background-color:blue;}
+            /*주석*/
+
+        #aaa .red{padding:49px;} /*내여백: 커진 것처럼 보이는 것*/
+        #aaa .green{border: 1px solid black;} /*실사이즈 영향없이 테두리로 사용*/
+        #aaa .blue{margin:49px;} /*외여백: 이동한 것처럼 보이는 것*/
+
+        #bbb .red{padding: 0px auto;}
+        
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="big" id="aaa">   
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+    <div class="big" id="bbb">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+</body>
+</html>

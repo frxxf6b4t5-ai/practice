@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="Keywords"> ->접근성
+<head>
+    <meta charset="UTF-8"> 잘 못 설정시, 글자가 깨짐, 화면에 보이는 것의 문제 -> 최적화
+                           -> 접근성: 모든 사용자가 동일한 정보를 받는 것 / 최적화: 모든 브라우저가 동일한 화면을 주는 것
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>수업 열심히 듣기</li>
+        <li>손으로 메모하기</li>
+        <li>vs code열기</li>
+    </ul>
+
+    <ol>
+        <li>내자리에 착석하기</li>
+        <li>컴퓨터 켜기</li>
+        <li>수업 열심히 듣기</li>
+    </ol>
+
+    부모-자식관계,  형제관계
+    
+    ★나열하는 어떤 것들도 ul태그를 사용함 (뉴스스탠드, 네이버 검색창 아래 목록, 등)
+    ★ Gnb, depth구조 =>ul은 반드시 li사용!!
+
+
+<!--주석: 코딩에 영향을 주지 않고 브라우저에 보이지도 않은 것-->
+<!--가로배치 태그는 반드시 세로태그의 자식-->
+<!--img src="" alt="" 태그는 단독 태그로 자식태그-->
+
+<h1><a href="#"><img src="" alt="로고이미지"></a></h1>
+
+<ul>
+<li>
+<h2><a href="#">웹학과</a></h2>
+<ul>
+<li><h3><a href="#">웹디자인</a><h3></li>
+<li><h3><a href="#">웹퍼블리싱</a><h3></li>
+<ul>
+<li><h4><a href="#">html/css</a></h4></li>
+<li><h4><a href="#">html5/css3</a></h4></li>
+</ul>
+</ul>
+</li>
+</ul>
+
+
+
+</body>
+</html>

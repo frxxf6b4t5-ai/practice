@@ -1,0 +1,12 @@
+block요소를 가로로 배치하는 방법
+float:left; -> 첫째를 맨 왼쪽에 두고 가로로 배치
+float:right; -> 첫째를 맨 오른쪽에 두고 가로로 배치
+
+문제점 : 부모의 세로값이 0이 된다.
+문제점의 이유 : z-index:auto가 다른 z-index:auto로 변경되기 때문(=부모-자식, 형제관계가 변하기 때문)
+문제점 해결방안 : 1. 부모에게 height(세로값)을 부여한다.
+                 2. 부모에게 overflow:hidden을 부여한다.
+                 3. float가 부여된 직계 부모에게
+                    html->class="clearfix" / css->.clearfix::after{display:block; content=""; clear:both;}
+                    
+                    ==> **선택자{display:flex;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{width:100px;
+            height:100px;}
+        .big{width:500px;
+            height:500px;}
+        #aaa{background-color: #987654;}
+        #bbb{background-color: #123456;}
+        
+        .red{background-color:red;}
+        .green{background-color:green;}
+        .blue{background-color:blue;}
+            /*주석*/
+
+        div{margin:0 auto;} /*id태그(갈색/네이비)의 부모는 body태그기 때문에 브라우저 중앙에!*/
+       
+        #aaa div:nth-child(3){margin-top: 100px;} /* :는 중에서를 뜻함, Gnb에서 마우스를 댈 때 전부 메뉴가 나오지 않게 하기 위해!*/
+        #aaa div:nth-child(2){margin-top:100px;}
+        #aaa div:nth-child(1){margin-top:100px;}
+        
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="big" id="aaa">   
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+    <div class="big" id="bbb">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+</body>
+</html>

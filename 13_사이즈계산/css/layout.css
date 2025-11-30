@@ -1,0 +1,22 @@
+*{margin:0; padding:0;}
+li{list-style: none;} /*li태그의 앞머리 제거*/
+.clearfix::after{display:block; content:""; clear:both;} /*부모태그 백그라운드가 안보이기 때문에
+                                                          float적용한 부모태그에 .classfix적용 후 따라움직인 것 제거*/
+
+.content{width:1660px;
+        margin:0 auto;   /*div의 부모인 바디태그의 가로사이즈의 중앙에 배치*/
+        background-color: #959595 ;} /*위에 li태그가 있어서 안보임*/
+
+/*ul{diplay:flex;} -> 플로트가 아닌 플랙스를 사용하기 어려운 이유는, 플랙스는 무조건 한줄에 넣어려하기때문에*/
+
+li{width:397px;  /*내용물 사이즈 소수점 쓸 수 없음*/
+    height:400px; /*원래 height는 값 주지 않음*/
+    margin-left:24px; 
+    margin-top:24px; 
+    float:left;
+    background-color: #987654;}  /*가로배치를 위해 float활용*/
+
+li:nth-child(4n+1){margin-left:0;}  /*복수갯수로 넘치면 아래로 내려가서 안보임(마진만 줬을때)->맨 왼쪽 마진을 없앤것
+                                       <<맨왼쪽 여백이 없어야하기때문에!!>> */
+
+

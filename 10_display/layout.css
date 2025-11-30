@@ -1,0 +1,9 @@
+div, a, img{background-color: red;}
+*{background-color: #959595;}
+
+div,a {width:100px;
+       height:100px;}
+
+img{width: 150px;
+    height:150px;}
+#a{width: 200px;}

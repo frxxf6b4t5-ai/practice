@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        div{width:100px;
+            height:100px;
+            border:1px solid #000000;}
+        .big{border:10px solid #000000;}
+        #aaa{border:20px solid #000000;}
+            
+            <!--우선순위선택자: 같은 명령을 했을 때, id>class>태그 순으로 적용됨
+                BUT 더 상세하게 작성하면 우선순위를 무시하고 적용됨(부모태그가 자식태그 이김!!)-->
+
+        .big{width:500px;
+            height:500px;}
+        #aaa{background-color: #987654;}
+        #bbb{background-color: #123456;}
+        
+        .big div {width:100px; height:100px;}  <!--★맨위 설정대신 부모.ㅌ ㅐ그로 적어도됨!!-->
+        .red{background-color:red;}
+        .green{background-color:green;}
+        .blue{background-color:blue;}
+
+        <!--★스타일 쓸 때 자식은 항상 부모 아래 적을것:캐스캐이팅
+             클래스 선택자가 그냥 태그 선택자보다 더 직접적으로 적용/하나의 태그에 복수 클래스 적용 가능
+             id는 한개만 있을 때 사용-->
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="big" id="aaa">   
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+    <div class="big" id="bbb">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+    
+    <!--부모코드 수직나열, 형제코드 수직나열
+        1번 코드가 수직으로 주르륵 나열되는데 그 위로 2번코드가 주르륵 나열됨>
+
+</body>
+</html>

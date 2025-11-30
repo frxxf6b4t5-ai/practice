@@ -1,0 +1,68 @@
+<input type="컨트롤값" value="초기값" size="크기" name="변수명"/> 
+
+
+속성
+	name : 필수 입력. form을 식별하기위한 이름지정.(데이터베이스와의 연동에 필요)
+	type : 입력 구성 요소의 종류를 지정
+	value : 사용자에게 보여주는 기본 초기값
+	          넘어가는 데이터 값
+
+type 종류
+	text - 텍스트박스(글자 입력란)  -> ID (짧음)
+	password - 비밀번호(value값도 ●로 표시된다)
+	email - 이메일
+
+	checkbox - 다수선택(개인정보 동의, 개인정보 제3자 동의,선택적 동의)
+		(value값은 DB로 넘어가는 값 / name값은 DB에 저장되는 장소의 이름)
+	radio - 단수선택(하나만 선택가능 / 동의함, 동의하지 않음 / 성별)
+		(name이 동일해야 하나만 선택 가능)
+	★★checkbox와 radio는 하나의 분류당 name이 동일해야 하며
+	먼저 체크가 되어 있고 싶다면 checked작성★★
+
+	select -> 여러개의 값중 하나를 선택가능하도록 제작
+	※option과 함께 사용된다
+	※name값이 DB에 저장되는 장소의 이름
+	option -> select에 사용되는 개별 값
+	※value값이 DB에 넘어가는 값
+
+	label  -> 댓글 (글게 적을 수 있음)
+
+	file
+	image
+	color
+
+	reset -> 다시 작성하기(form태그 내부의 모든 input이 초기화) => 사용하지 않음
+
+	submit -> 완료 버튼(form태그 내부의 모든input이 데이터 넘겨줌)
+	button -> reset도 submit도 아닌 버튼 => ex.아이디중복확인, 인증메일보내기
+	
+	hidden - 보이지 않는 타입(개발자용)
+	date
+	datetime-local
+	month
+	number
+	range
+	search
+	time
+	week
+
+------------------------------------------------------
+숙제!!
+크롬에서 구글에 hteml 회원가입 폼 검색해서
+예제 파일이 있는 것을 보며 사용되는 type은 필수로 메모해두기!
+(특징을 메모해두세요~~~)
+------------------------------------------------------
+★★★★★태두리 속성★★★★
+border:선굵기 선종류 선색상; -> 태두리를 선으로 표현하기
+border:1px     solid    black;
+
+border-radius:각도;  -> 태두르리를 둥글게 만들기(단위는 %나 px을 사용)
+border-radius:100%;
+
+
+
+
+
+
+
+

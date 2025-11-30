@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div div{width:100px;
+            height:100px;}
+        #aaa{width:500px;
+            height:500px;}
+        #aaa{background-color: #987654;}
+        #bbb{background-color: #123456;}
+        
+        .red{background-color:red;}
+        .green{background-color:green;}
+        .blue{background-color:blue;}
+            /*주석*/
+
+        #aaa .red{float:left;}
+        #aaa div:nth-child(2){float:left;}
+        #aaa .blue{float:left;}
+        
+        #bbb div:nth-child(1){float:left;}
+        #bbb .green{float:left;}
+        #bbb div:nth-child(3){float:left;}
+        
+       
+        /*#bbb는 크기 지정 안했으므로 블록 -> 가로 100 세로 자식만큼->마지막 자식이 끌어당기면 부모가 안보임*/
+        /*#bbb{overflow:hidden;} -> 사용빈도 낮음*/  
+        
+        .clearfix::after{display:block; content:""; clear:both;}
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="big" id="aaa">   
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+    <div class="big clearfix" id="bbb">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+</body>
+</html>

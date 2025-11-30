@@ -1,0 +1,19 @@
+div{margin:0 auto;}
+/*relative*/
+/*
+#aaa .red{position: relative;
+          top:30px; left:30px;}
+*/
+
+/*absolute*/
+/*
+#aaa{position:relative;}
+#aaa .red {position:absolute;}
+#aaa .green{position:absolute;
+            top:30px;
+            left:30px;}
+*/
+
+/*fixed*/
+#aaa .red {position:fixed;  
+           right:30px; bottom:30px;} /*정보를 가리는 fixed 태그*/
